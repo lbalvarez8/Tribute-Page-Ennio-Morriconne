@@ -1,9 +1,14 @@
+/* General*/
 body {
     margin: 0;
     margin-top: 50px;
     width:100%;
 }
-
+ nav{
+     margin-top: 30px;
+     text-align: center;
+     margin-left: 10em;
+ }
 header {
     display: flex;
     position: fixed;
@@ -16,12 +21,21 @@ header {
     width: 100%;
 }
 
+a{
+    color: yellow;
+    text-decoration: none;
+    width:100%;
+}
+
+/*estilos tipograficos*/
 h1{
     font-size: 2em;
     width: 100%;
    
     
 }
+
+/* cabecera: logo, navegacion,  */
 
 header * {
     display: inline;
@@ -37,17 +51,28 @@ header ul {
 
 }
 
-
+#awards ul{
+    padding: 0;
+    overflow: hidden;
+    text-decoration: none;
+    width:100%;
+    top:0;
+    display:inline-block;
+    margin:0;
+}
 
 header li {
     text-align: left;
-    margin-left: 40px;
+    margin-left: 70px;
+    text-decoration: none;
+    font-color: black;
+    width: 100%;
     
 }
-
+/*estructura:contenedor*/
 section {
     height: 100vh;
-    border: 1px solid black;
+    border: 4px solid orange;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,8 +82,21 @@ section {
 #hero .profile-img {
     width: 900px;
 }
-
+p{
+    padding: 10px;
+    margin:20px;
+    width:100%;
+    text-align: center;
+}
+/*comentario*/
+h2{
+    font-size: 1.5em;
+    padding: 20px;
+    width: 100%;
+}
+/*Pie de pagina*/
 footer {
     text-align: center;
-    padding: 50px;
+    padding: 0;
 }
+/*paginas*/
