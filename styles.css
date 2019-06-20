@@ -37,12 +37,6 @@ h1{
 
 /* cabecera: logo, navegacion,  */
 
-header * {
-    display: inline;
-    height: 50px;
-    
-}
-
 header ul {
     padding: 0;
     overflow: hidden;
@@ -65,7 +59,7 @@ header li {
     text-align: left;
     margin-left: 70px;
     text-decoration: none;
-    font-color: black;
+    color: black;
     width: 100%;
     
 }
