@@ -1,15 +1,56 @@
 /* General*/
+*{
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     margin-top: 50px;
     width:100%;
+    height:auto;
 }
- nav{
-     margin-top: 30px;
-     text-align: center;
-     margin-left: 10em;
-     z-index: 5;
- }
+
+a{
+    color: yellow;
+    text-decoration: none;
+    width:100%;
+
+    
+}
+
+span{
+    display:inline-block;
+    margin:0em;
+    padding: 0em;
+    text-align:justify;
+    width:100%;
+}
+/*font styles*/
+h1{
+    font-size: 2em;
+    width: 100%;  
+    margin:0;
+    padding-right: 8em;
+}
+li{
+    display: inline-block;
+    width:100%;
+    text-align:justify;
+    margin: 0;
+    padding:0;
+    list-style-type: disc;
+}
+ul{
+    padding: 0;
+    width:100%;
+    top:0;
+    display:inline-block;
+    margin:0;
+    list-style-type: disc;
+    
+}
+
+/* header: logo, nav  */
 header {
     display: flex;
     position: fixed;
@@ -20,75 +61,144 @@ header {
     line-height: 0px;
     background-color:orange;
     width: 100%;
+    justify-content: space-between;
 }
-
-a{
-    color: yellow;
-    text-decoration: none;
-    width:100%;
-}
-
-/*estilos tipograficos*/
-h1{
-    font-size: 2em;
-    width: 100%;
-   
-    
-}
-
-/* cabecera: logo, navegacion,  */
 
 header ul {
     padding: 0;
-    overflow: hidden;
-    text-decoration: none;
+   margin:0 auto;
     width: 100%;
+    text-align: justify;
 
 }
-
-#awards ul{
-    padding: 0;
-    overflow: hidden;
-    text-decoration: none;
-    width:100%;
-    top:0;
-    display:inline-block;
-    margin:0;
+nav{
+    margin-top: 2em;
+    text-align: center;
+    margin-left: 5em;
+    z-index: 5;
+    width: 100%;
 }
 
 header li {
     text-align: left;
     margin-left: 70px;
-    text-decoration: none;
     color: black;
     width: 100%;
     
 }
 /*estructura:contenedor*/
-section {
-    height: 100vh;
+* section {
+    height: auto;
     border: 4px solid orange;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right:2em;
 }
 
-#hero .profile-img {
-    width: 900px;
+#hero img{
+    width: 100%;
+    height: auto;
 }
-p{
-    padding: 10px;
-    margin:20px;
+
+/*comentario*/
+#about h2{
+    color:orange;
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+    font-size: 3em;
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+       
+
+}
+#about p{
+    padding:1em;
+    margin:1em;
     width:100%;
+    text-align: justify;
+    line-height: 1.5em;
+}
+#about a{
+    color:brown;
+}
+
+#timeline h2{
+    color:orange;
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+        font-size: 3em;
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+       
+
+}
+
+#timeline span{
+    padding:1em;
+    margin:1em;
+    width:100%;
+    text-align: justify;
+    list-style-type: disc;
+
+}
+
+#timeline li{
+    display:list-item;
+    list-style-type: disc;
+    line-height: 1.5em;
+}
+
+#music h2{
+    color:orange;
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+    font-size: 3em;
+    margin: 0;
+    font-weight: bold;
     text-align: center;
 }
-/*comentario*/
-h2{
-    font-size: 1.5em;
-    padding: 20px;
-    width: 100%;
+
+#music iframe{
+    padding:1em;
+    margin:1em;
+    width:100%;
 }
+
+#awards h2{
+    color:orange;
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+    font-size: 3em;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+
+}
+#awards li{
+    list-style-type: square;
+    display: list-item;
+    line-height: .5em;
+}
+
+#awards ul{
+    padding:1em;
+    margin:1em;
+    width:100%;
+    text-align: justify;
+}
+
 /*Pie de pagina*/
 footer {
     text-align: center;
@@ -99,4 +209,8 @@ footer {
 header * {
     display: inline;
     
+}
+
+section #music{
+    background-color: orange;
 }
