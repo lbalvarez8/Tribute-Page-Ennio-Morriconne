@@ -1,23 +1,59 @@
 /* General*/
 *{
     box-sizing: border-box;
+    scroll-behavior: smooth;
+  font-family: 'Bungee Inline', 'Londrina Solid';
 }
 
 body {
-    margin: 0;
-    margin-top: 50px;
+    margin-top: 0;
     width:100%;
-    height:auto;
+    height:100%;
+    overflow-x: hidden;
 }
-
+#nav{
+        margin-top: 2em;
+        text-align: center;
+        margin-left: 5em;
+        width: 100%;
+        height: auto ! important;
+    }
+  
+  header {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block
+  }
+  #nav li {
+    padding-right: 3%;
+    display: inline-block;
+  }
+#nav ul{
+    display:block;
+    display: inline-block;
+  list-style-type: none;
+}
 a{
-    color: yellow;
     text-decoration: none;
     width:100%;
-
+    text-align:center;
+   display:block;
+   padding: 20px 0 0 0;
+   font-size: 1.2em;
+   display: inline-block;
+  list-style-type: none;
+  height: auto ! important;
+  position:relative;
+        float:left;
     
 }
-
+a:link,
+a:visited,
+a:active {
+  color: yellow;
+  text-decoration: none;
+}
 span{
     display:inline-block;
     margin:0em;
@@ -26,12 +62,6 @@ span{
     width:100%;
 }
 /*font styles*/
-h1{
-    font-size: 2em;
-    width: 100%;  
-    margin:0;
-    padding-right: 8em;
-}
 li{
     display: inline-block;
     width:100%;
@@ -71,23 +101,9 @@ header ul {
     text-align: justify;
 
 }
-nav{
-    margin-top: 2em;
-    text-align: center;
-    margin-left: 5em;
-    z-index: 5;
-    width: 100%;
-}
 
-header li {
-    text-align: left;
-    margin-left: 70px;
-    color: black;
-    width: 100%;
-    
-}
 /*estructura:contenedor*/
-* section {
+.content{
     height: auto;
     border: 4px solid orange;
     display: flex;
@@ -100,48 +116,53 @@ header li {
     padding-left: 2em;
     padding-right:2em;
 }
-
-#hero img{
-    width: 100%;
+/*Image Front Page*/
+img{
+    max-width: 100%;
     height: auto;
-}
-
-/*comentario*/
-#about h2{
-    color:orange;
+    display: block;
+    margin: 0 auto;
+    z-index:1;
+  }
+  img-div{
+    margin-left: 0 auto;
+    margin-right:0 auto;
     padding: 0;
+    display:block;
+    width:100%;
+  }
+
+  #img-div h1{
+      position:absolute;
+      text-align: left;
+      color:white;
+      top: 40%;
+      left: 60%;
+  }
+
+/*Sections*/
+.sections{
+    color:orange;
     width: 100%;
     display: inline-block;
     font-size: 3em;
-        margin: 0;
-        font-weight: bold;
-        text-align: center;
-       
+    margin: 0;
+    font-weight: bold;
+    text-align: center; 
+} 
 
-}
-#about p{
+#tribute-info p{
     padding:1em;
     margin:1em;
     width:100%;
     text-align: justify;
     line-height: 1.5em;
+    
 }
 #about a{
     color:brown;
 }
 
-#timeline h2{
-    color:orange;
-    padding: 0;
-    width: 100%;
-    display: inline-block;
-        font-size: 3em;
-        margin: 0;
-        font-weight: bold;
-        text-align: center;
-       
-
-}
 
 #timeline span{
     padding:1em;
@@ -158,34 +179,12 @@ header li {
     line-height: 1.5em;
 }
 
-#music h2{
-    color:orange;
-    padding: 0;
-    width: 100%;
-    display: inline-block;
-    font-size: 3em;
-    margin: 0;
-    font-weight: bold;
-    text-align: center;
-}
-
 #music iframe{
     padding:1em;
     margin:1em;
     width:100%;
 }
 
-#awards h2{
-    color:orange;
-    padding: 0;
-    width: 100%;
-    display: inline-block;
-    font-size: 3em;
-    margin: 0;
-    font-weight: bold;
-    text-align: center;
-
-}
 #awards li{
     list-style-type: square;
     display: list-item;
@@ -199,18 +198,70 @@ header li {
     text-align: justify;
 }
 
-/*Pie de pagina*/
-footer {
-    text-align: center;
-    padding: 0;
-}
-/*paginas*/
+/* Footer */
+@media only screen and (max-width: 600px) {
+    body {
+        width:100%;
+        height: 100%;
+    overflow-x: hidden;
+      margin-top: 0;
+      text-align: center;
+    }
+    main {
+      margin: 0 auto;
+    }
+    img{
+        width:100%;
+        height: auto;
+    }
+    header {
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        line-height: 0px;
+        background-color:orange;
+        width: 100%;
+        justify-content: space-between;
+    }
+    nav {
+        color: white;
+        width: 350px;
+        list-style-type: none;
+        float: right;
+        position: relative;
+        bottom: 5em;
+        right: 4em;
+        padding: 0;
+        ;
+      }
+      #nav li {
+        display: inline-block;
+      }
+      .sections{
+        font-size: 2rem;
+      }
+      p{
+        width: 80%;
+        font-size: 1.5rem;
+        text-align: justify;
+        line-height:1.5rem;
+      }
+      #timeline li{
+        font-size: 1.5rem;
+        text-align: justify; 
+        line-height: 1.5em;
+      }
 
-header * {
-    display: inline;
+      #awards li{
+        font-size: 1.5rem;
+        text-align: justify; 
+        line-height: 1.5em;
+      }
+      #music iframe{
+        width:50%;
+        max-width: 560px;
+        height: 315px;
+        height:auto;
+    }
     
-}
-
-section #music{
-    background-color: orange;
-}

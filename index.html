@@ -4,38 +4,40 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
         <title>Ennio Morricone Tribute</title>
         <link rel="stylesheet" href="styles.css">
+        
     </head>
     <body>
-        <header>
-            <nav>
-<!--Menu bar-->
-             <h1> ENNIO MORRICONE</h1>
+        <!--Menu bar-->
+    <header>   
+        <div id= "main">
+            <div id="nav">
+             <div id= "title" class= string>   
                 <ul>
-                    <li><a href="#hero">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#image">HOME</a></li>
+                    <li><a href="#tribute-info">ABOUT</a></li>
                     <li><a href="#timeline">TIMELINE</a></li>
                     <li><a href="#awards">AWARDS</a></li>
                 </ul>
-            </nav>
+            </div>
+            </div>
         </header>
     <!--Content-->
-            <section id="hero">
-                    <img src="hero-ennio.jpg" class="profile-img">
-            </section>
-
-            <section id="about">
-                <h2>ABOUT</h2>
+            <div id="img-div">
+            <img id="image" src="hero-ennio.jpg" alt="Ennio_Morricone">
+            <h1 id="img-caption">ENNIO MORRICONE</h1>
+            </div>
+            
+            <div class="content"id="tribute-info">
+                <h2 class="sections">ABOUT</h2>
                   <p> Everyone knows this man, maybe not for his name or his face but his magnificent compositions. Ennio Morricone has been one of the best musician of our decade and personally my favorite film composer. Here's my tribute web page for him..He has written music for more than 500 motion pictures and TV series and Morricone's music has been used in more than 60 award-winning films.
                       <br><br>Morricone has received five Oscar nominations, the first in 1979 for the soundtrack of the film "Days of Heaven" by Terrence Malick, then follow that for "Mission" by Roland Joffé, 1986, "The Untouchables "Brian De Palma in 1987," Bugsy "Barry Lavison in 1992 and" Malena "by Giuseppe Tornatore in 2001. <br>
                       Morricone has lived in Italy his entire life and has never desired to live in Hollywood. Morricone is also not fluent in English and will give interviews only in Italian, his native language.
                       To know more about his music, concerts, tour dates and biography, please, check his website <a href="http://www.enniomorricone.org/">here</a> <br>
-
- 
                  </p>
-            </section>
+            </div>
            <!--Timeline--> 
-            <section id="timeline">
-                <h2>TIMELINE</h2>
+            <div class="content"id="timeline">
+                <h2 class="sections">TIMELINE</h2>
                 <span>
                 <ul>
                     <li> Born in Rome on November 10, 1928</li>
@@ -52,17 +54,16 @@
                     <li>In 2006, "The Ecstasy of Gold" became one of Morricone's best-known compositions. The opening scene of Jeff Tremaine's Jackass Number Two.</li>
                 </ul>  
                 </span> 
-        </section>
+            </div>
         <!--Music-->
-        <section id="music">
-                <h2>MUSIC</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/J3IlqY1CbI0?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                
-            </section>
+        <div class="content"id="music">
+                <h2 class="sections">MUSIC</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/J3IlqY1CbI0?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+        </div>
 
         <!--Awards-->
-        <section id="awards">
-            <h2>AWARDS</h2>
+        <div class="content" id="awards">
+            <h2 class="sections">AWARDS</h2>
             <span>
                 <ul>
                     <li>Grammy Awards, 1988</li><br>
@@ -90,13 +91,13 @@
                     <li>ASCAP Film Awards, 2016</li><br>
                 </ul>
                 </span>
-        </section>
-
-        <footer>
-            <p> All the information was taken from https://en.wikipedia.org/wiki/Ennio_Morricone</p>
-            
-        </footer>
+            </div>
+            <div class="content" id="footer">
+            <p> All the information was taken from
+            <a id="tribute-link" target="_blank" href="http://www.enniomorricone.org/">Ennio's Webpage</a> <br>Coded by Lorena Alvarez</p>
+             </div>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        </div>
     </body>
 </html>
 
